@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 29, 2022, 5:57:36 PM
+    Author     : Akash Singh
+*/
+
+.float-wrap{
+    height: 32px !important;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    
+}
+.float-label > input{
+    height: 32px !important;
+    font-size: 15px;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+}
+.float-label > label{
+    position:relative !important;
+    left: 1rem;
+    top: -32px;
+    line-height: 32px;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+    font-weight: bold;
+    cursor: text;
+    color: #666666;
+    transition: top 1s ease-in, font-size 1s ease-in , padding: 1s ease-in ;
+}
+.float-label > input:focus ~ label{
+    top: -48px;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 1px;
+    color: #5B6BBF;
+}
+.float-label > input:not(:focus):not(:placeholder-shown) ~ label{
+    top: -48px;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 1px;
+    color: #5f6368;
+}
